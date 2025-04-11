@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntraLink 2184 - Guiding Citizens to Purity Through Precision</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="login-screen" class="screen active">
+            <div class="surveillance-camera">
+                <div class="camera-lens">
+                    <div class="lens-inner"></div>
+                </div>
+                <div class="camera-body"></div>
+            </div>
+            <h1>IntraLink 2184</h1>
+            <p class="tagline">Guiding Citizens to Purity Through Precision</p>
+            <div class="login-form">
+                <h2>Welcome to a Safer Society</h2>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your assigned username">
+                </div>
+                <div class="input-group">
+                    <label for="citizen-id">Citizen ID</label>
+                    <input type="password" id="citizen-id" placeholder="Enter your 12-digit citizen ID">
+                </div>
+                <div class="scan-animation">
+                    <div class="scan-line"></div>
+                    <p class="scan-text">Scanning identity...</p>
+                </div>
+                <button id="login-btn" class="btn">Authenticate</button>
+                <p class="warning">All activities are monitored. Unauthorized access is a crime.</p>
+                <p class="audio-note">Note: For the full surveillance experience, audio files should be added to the audio directory.</p>
+            </div>
+        </div>
+
+        <div id="dashboard" class="screen">
+            <header>
+                <div class="logo">
+                    <h2>IntraLink 2184</h2>
+                </div>
+                <div class="user-info">
+                    <span id="citizen-name">Citizen #12345</span>
+                    <span id="time">06:00</span>
+                    <span id="loyalty-indicator">Loyalty: <span id="loyalty-score">100</span></span>
+                </div>
+                <div class="surveillance-indicator">
+                    <div class="red-dot"></div>
+                    <span>LIVE</span>
+                </div>
+            </header>
+
+            <nav>
+                <ul>
+                    <li data-tab="routine" class="active">Daily Routine</li>
+                    <li data-tab="interactions">Approved Interactions</li>
+                    <li data-tab="purchases">Purchase Registry</li>
+                    <li data-tab="mood">Mood & Thought Tracking</li>
+                    <li data-tab="loyalty">Loyalty Score</li>
+                </ul>
+            </nav>
+
+            <main>
+                <section id="routine-tab" class="tab-content active">
+                    <h3>Daily Routine - Mandatory Schedule</h3>
+                    <div class="task-list">
+                        <div class="task" data-time="07:00">
+                            <div class="task-time">07:00</div>
+                            <div class="task-content">
+                                <h4>Wake Up & Salute the Party</h4>
+                                <p>Standard morning pledge of loyalty to Big Brother</p>
+                            </div>
+                            <div class="task-status">Pending</div>
+                        </div>
+                        <div class="task" data-time="08:00">
+                            <div class="task-time">08:00</div>
+                            <div class="task-content">
+                                <h4>Productivity Session</h4>
+                                <p>Contribution to the Party's economic goals</p>
+                            </div>
+                            <div class="task-status">Pending</div>
+                        </div>
+                        <div class="task" data-time="10:00">
+                            <div class="task-time">10:00</div>
+                            <div class="task-content">
+                                <h4>Neighborhood Surveillance Walk</h4>
+                                <p>Report any suspicious activity in your sector</p>
+                            </div>
+                            <div class="task-status">Pending</div>
+                        </div>
+                        <div class="task" data-time="12:00">
+                            <div class="task-time">12:00</div>
+                            <div class="task-content">
+                                <h4>Loyalty Review</h4>
+                                <p>Daily affirmation of commitment to the collective</p>
+                            </div>
+                            <div class="task-status">Pending</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="interactions-tab" class="tab-content">
+                    <h3>Approved Interactions - Citizen Contact Registry</h3>
+                    <div class="contact-list">
+                        <div class="contact approved">
+                            <div class="contact-avatar"></div>
+                            <div class="contact-info">
+                                <h4>Comrade Julia</h4>
+                                <p class="status approved">APPROVED</p>
+                            </div>
+                            <button class="message-btn">Message</button>
+                        </div>
+                        <div class="contact restricted">
+                            <div class="contact-avatar"></div>
+                            <div class="contact-info">
+                                <h4>Winston Smith</h4>
+                                <p class="status restricted">RESTRICTED</p>
+                            </div>
+                            <button class="message-btn">Message</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="purchases-tab" class="tab-content">
+                    <h3>Purchase Registry - Approved Rations</h3>
+                    <div class="purchase-list">
+                        <div class="purchase-item available">
+                            <h4>Victory Coffee</h4>
+                            <p class="item-status">1 Unit Available</p>
+                            <button class="request-btn">Request</button>
+                        </div>
+                        <div class="purchase-item unavailable">
+                            <h4>Razors</h4>
+                            <p class="item-status">Not Available</p>
+                            <button class="request-btn" disabled>Request</button>
+                        </div>
+                        <div class="item-search">
+                            <input type="text" id="item-search" placeholder="Search for items...">
+                            <button id="search-btn">Search</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="mood-tab" class="tab-content">
+                    <h3>Mood & Thought Tracking - 6-Hour Compliance Check</h3>
+                    <div class="mood-selection">
+                        <h4>Current Mood Selection</h4>
+                        <p class="instruction">Select your current emotional state:</p>
+                        <div class="mood-options">
+                            <div class="mood-option">
+                                <input type="radio" id="loyal" name="mood" value="loyal">
+                                <label for="loyal">Loyal</label>
+                            </div>
+                            <div class="mood-option">
+                                <input type="radio" id="grateful" name="mood" value="grateful">
+                                <label for="grateful">Grateful</label>
+                            </div>
+                            <div class="mood-option warning">
+                                <input type="radio" id="distracted" name="mood" value="distracted">
+                                <label for="distracted">Distracted <span class="warning-tag">⚠ Warning: unpatriotic mood</span></label>
+                            </div>
+                        </div>
+                        <div class="thought-scan">
+                            <h4>Thought Scan</h4>
+                            <div class="scan-progress">
+                                <div class="scan-bar"></div>
+                            </div>
+                            <p class="scan-status">Ready for thought scan. Remain calm and compliant.</p>
+                        </div>
+                        <button id="submit-mood" class="btn">Submit Mood Report</button>
+                    </div>
+                </section>
+
+                <section id="loyalty-tab" class="tab-content">
+                    <h3>Loyalty Score - Citizen Compliance Metric</h3>
+                    <div class="loyalty-display">
+                        <div class="score-circle">
+                            <span id="loyalty-display">100</span>
+                        </div>
+                        <div class="status-indicator">Status: Model Citizen</div>
+                    </div>
+                    <div class="loyalty-history">
+                        <h4>Recent Compliance Activity</h4>
+                        <ul class="history-list">
+                            <li class="positive">+5 points - Completed morning salute</li>
+                            <li class="positive">+10 points - Reported suspicious behavior</li>
+                            <li class="negative">-15 points - Missed curfew (2 days ago)</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>THE PARTY IS WATCHING • DISSENT IS TREASON • CONFORMITY IS FREEDOM</p>
+                <div class="surveillance-indicator-small">
+                    <div class="red-dot"></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div id="alert-overlay" class="overlay">
+        <div class="alert-box">
+            <div class="alert-header">
+                <h3>SYSTEM ALERT</h3>
+                <div class="alert-indicator"></div>
+            </div>
+            <div class="alert-content">
+                <p id="alert-message">Unauthorized Socialization Detected. Your profile has been flagged.</p>
+            </div>
+            <button id="alert-dismiss" class="btn">Acknowledge</button>
+        </div>
+    </div>
+
+    <audio id="background-sound" loop>
+        <source src="audio/ambient.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="click-sound">
+        <source src="audio/click.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

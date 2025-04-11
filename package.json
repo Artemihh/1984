@@ -1,0 +1,11 @@
+{
+  "name": "intralink-2184",
+  "version": "1.0.0",
+  "description": "Dystopian surveillance state web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT"
+} 
